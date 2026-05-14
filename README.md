@@ -2,7 +2,7 @@
 This repository contains the code accompanying the bachelor’s thesis: 
 **"Neuromorphic active object recognition"** by Vedmedenko Olha. *Czech Technical University in Prague, Faculty of Information Technology*, 2026.
 
-![](media/sdr_architecture.png)
+![](media/sdr_architecture_white_background.png)
 
 # Pipeline overview
 Both the event-stream processing script `process_*` and the SpiNNaker deployment script `spinn_*` must be started for each pipeline: the `process_*` run the inference loop, while the  `spinn_*` scripts stream event data and collect classification outputs.
