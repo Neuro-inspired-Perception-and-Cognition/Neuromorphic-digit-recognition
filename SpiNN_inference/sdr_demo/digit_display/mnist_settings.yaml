@@ -1,0 +1,17 @@
+display_time: 4000 # ms
+frame_time: 40 # ms between two consecutive frames
+movement_distance: 4 # px distance from center for movement positions
+movement_mode: legacy # one of: none, diamond, hourglass, diagonal, legacy
+w: 60 # px
+h: 60 # px
+win_x: 1780  # Horizontal offset from left
+win_y: 220  # Vertical offset from top
+padding: 0 # px
+shuffle: false # true/false, shuffle filtered samples before selecting range
+sample_range: [0,200] # inclusive range [start, end], or 'all'
+
+# Options for 'digit':
+# - all
+# - single value, e.g. 7
+# - list, e.g. [1, 3, 8]
+digit: all
