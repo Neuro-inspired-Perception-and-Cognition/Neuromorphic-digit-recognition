@@ -71,7 +71,8 @@ SpiNNaker over an Ethernet live connection.
 │       ├── configs.py
 │       ├── process_nmnist.py
 │       └── spinn_srmnist.py
-├── sRMNIST_training.ipynb
+├── sRMNIST_training
+│   ├── sRMNIST_training.ipynb
 ├── requirements.txt
 └── README.md
 ```
