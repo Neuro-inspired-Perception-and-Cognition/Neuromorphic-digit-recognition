@@ -28,7 +28,7 @@ class InjectorConfig:
     SENDER_PORT: int = 56786
     TIME_WINDOW: int = 10_000
     INJECTOR_SPINN_POP_LABEL = "pop_inp"
-    INPUT_PATH = r'data\NMNIST\Test' # Path to N-MNIST folder
+    INPUT_PATH = r'data\N-MNIST\Test' # Path to N-MNIST folder
     SAVE_FIG: bool = False
     MIN_EVT_TO_SAVE: int = -1
     OUTPUT_DIR: str = "figures/"

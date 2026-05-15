@@ -77,7 +77,7 @@ pop_hidden_1_label = 'pop_hidden_1'
 pop_hidden_1 = p.Population(100,
                    p.IF_curr_exp(**excitatory_neuron_L1),
                    label = pop_hidden_1_label)
-exc, inh = load_connections(r"C:\Users\vedme\OneDrive\Робочий стіл\BT\code\digit_recognition\SpiNN_inference\model_weights\ConnectionFile_w_fc1_torch.Size([1024, 100])_SRMNIST.txt")
+exc, inh = load_connections(r"digit_recognition\SpiNN_inference\model_weights\ConnectionFile_w_fc1_torch.Size([1024, 100])_SRMNIST.txt")
 print(f"downscale -> hidden (exc)   : {len(exc)}")
 print(f"downscale -> hidden (inh)   : {len(inh)}")
 downScaled_pop_hidden_1_exc_prj = p.Projection(input_pop, pop_hidden_1, p.FromListConnector(exc), receptor_type='excitatory')
@@ -88,7 +88,7 @@ pop_out_label = 'pop_out'
 pop_out = p.Population(10,
                    p.IF_curr_exp(**excitatory_neuron_L2),
                    label = pop_out_label)
-exc, inh = load_connections(r"C:\Users\vedme\OneDrive\Робочий стіл\BT\code\digit_recognition\SpiNN_inference\model_weights\ConnectionFile_w_fc2_torch.Size([100, 10])_SRMNIST.txt")
+exc, inh = load_connections(r"digit_recognition\SpiNN_inference\model_weights\ConnectionFile_w_fc2_torch.Size([100, 10])_SRMNIST.txt")
 print(f"hidden -> output (exc)      : {len(exc)}")
 print(f"hidden -> output (inh)      : {len(inh)}")
 pop_hidden_1_out_exc_prj = p.Projection(pop_hidden_1, pop_out, p.FromListConnector(exc), receptor_type='excitatory')

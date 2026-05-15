@@ -11,8 +11,8 @@ correct_per_class = defaultdict(int)
 total_per_class = defaultdict(int)
 confusion = np.zeros((10, 10), dtype=int)
 
-pred_file = r"C:\Users\vedme\OneDrive\Робочий стіл\BT\experiments\detections_test_validation.txt"
-true_file = r"C:\Users\vedme\OneDrive\Робочий стіл\BT\experiments\digit_times_test_validation.txt"
+pred_file = r"experiments\detections_test_validation.txt"
+true_file = r"experiments\digit_times_test_validation.txt"
 shift = 0
 
 def load_preds(path):
